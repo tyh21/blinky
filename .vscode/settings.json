@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "systick.h": "c",
+        "gpio.h": "c",
+        "epd_2in13_v2.h": "c",
+        "imagedata.h": "c"
+    }
+}

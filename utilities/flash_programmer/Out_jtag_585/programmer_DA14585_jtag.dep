@@ -1,0 +1,345 @@
+Dependencies for Project 'programmer', Target 'DA14585_jtag': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\..\sdk\platform\arch\boot\ARM\startup_DA14585_586.s)(0x5EA912AC)(--cpu Cortex-M0 --li -g --16 --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 536" --pd "ARMCM0 SETA 1"--list .\out_jtag_585\startup_da14585_586.lst --xref -o .\out_jtag_585\startup_da14585_586.o --depend .\out_jtag_585\startup_da14585_586.d)
+F (..\..\sdk\platform\arch\boot\system_DA14585_586.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\system_da14585_586.o --omf_browse .\out_jtag_585\system_da14585_586.crf --depend .\out_jtag_585\system_da14585_586.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+F (..\..\sdk\platform\arch\boot\ARM\startup_DA14531.s)(0x5EA912AC)()
+F (..\..\sdk\platform\arch\boot\system_DA14531.c)(0x5EA912AC)()
+F (..\..\sdk\platform\arch\main\hardfault_handler.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\hardfault_handler.o --omf_browse .\out_jtag_585\hardfault_handler.crf --depend .\out_jtag_585\hardfault_handler.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\uart\uart.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (..\..\sdk\platform\arch\main\arch_wdg.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\syscntl\syscntl.h)(0x5EA912AC)
+I (.\include\user_periph_setup.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+F (..\..\sdk\platform\arch\main\nmi_handler.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\nmi_handler.o --omf_browse .\out_jtag_585\nmi_handler.crf --depend .\out_jtag_585\nmi_handler.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\arch\main\arch_wdg.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\syscntl\syscntl.h)(0x5EA912AC)
+F (.\src\peripherals.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\peripherals.o --omf_browse .\out_jtag_585\peripherals.crf --depend .\out_jtag_585\peripherals.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\uart\uart.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\include\user_periph_setup.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\syscntl\syscntl.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\utilities\otp_hdr\otp_hdr.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.h)(0x5EA912AC)
+F (..\..\third_party\crc32\crc32.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\crc32.o --omf_browse .\out_jtag_585\crc32.crf --depend .\out_jtag_585\crc32.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+F (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\i2c_eeprom.o --omf_browse .\out_jtag_585\i2c_eeprom.crf --depend .\out_jtag_585\i2c_eeprom.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+F (.\..\..\sdk\platform\driver\spi_flash\spi_flash.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\spi_flash.o --omf_browse .\out_jtag_585\spi_flash.crf --depend .\out_jtag_585\spi_flash.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\..\sdk\platform\driver\spi_flash\spi_flash.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+F (.\..\..\sdk\platform\driver\gpio\gpio.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\gpio.o --omf_browse .\out_jtag_585\gpio.crf --depend .\out_jtag_585\gpio.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (.\include\user_periph_setup.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+F (.\src\programmer.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\programmer.o --omf_browse .\out_jtag_585\programmer.crf --depend .\out_jtag_585\programmer.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\main\arch_system.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch_api.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\core_modules\nvds\api\nvds.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\main\arch_wdg.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (.\include\programmer.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi_flash\spi_flash.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\include\user_periph_setup.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\uart\uart.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.h)(0x5EA912AC)
+I (.\include\version.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\sdk_version.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\syscntl\syscntl.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\timer\timer0.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\timer\timer0_2.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\hw_otpc_58x.o --omf_browse .\out_jtag_585\hw_otpc_58x.crf --depend .\out_jtag_585\hw_otpc_58x.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\sdk\platform\driver\hw_otpc\hw_otpc.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\hw_otpc\hw_otpc_531.c)(0x5EA912AC)()
+F (..\..\sdk\platform\driver\dma\dma.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\dma.o --omf_browse .\out_jtag_585\dma.crf --depend .\out_jtag_585\dma.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\spi\spi_58x.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\spi_58x.o --omf_browse .\out_jtag_585\spi_58x.crf --depend .\out_jtag_585\spi_58x.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\spi\spi_531.c)(0x5EA912AC)()
+F (..\..\sdk\platform\driver\i2c\i2c.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\i2c.o --omf_browse .\out_jtag_585\i2c.crf --depend .\out_jtag_585\i2c.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\uart\uart.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\uart.o --omf_browse .\out_jtag_585\uart.crf --depend .\out_jtag_585\uart.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\uart\uart.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+F (..\..\sdk\platform\driver\syscntl\syscntl.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\syscntl.o --omf_browse .\out_jtag_585\syscntl.crf --depend .\out_jtag_585\syscntl.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\syscntl\syscntl.h)(0x5EA912AC)
+F (..\..\sdk\platform\driver\timer\timer0.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\timer0.o --omf_browse .\out_jtag_585\timer0.crf --depend .\out_jtag_585\timer0.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\driver\timer\timer0.h)(0x5EA912AC)
+F (..\..\sdk\platform\arch\main\arch_system.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\arch_system.o --omf_browse .\out_jtag_585\arch_system.crf --depend .\out_jtag_585\arch_system.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
+I (.\..\..\sdk\platform\include\datasheet.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\da14585_586.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h)(0x5EA912AC)
+I (..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\include\system_DA14585_586.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\compiler\ARM/compiler.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\ll\ll.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\arch_api.h)(0x5EA912AC)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\..\..\sdk\platform\core_modules\nvds\api\nvds.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\arch\main\arch_wdg.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)
+I (..\..\sdk\platform\arch\main\arch_system.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\utilities\otp_hdr\otp_hdr.h)(0x5EA912AC)
+I (.\include\user_periph_setup.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\i2c\i2c.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\dma\dma.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)
+I (.\..\..\sdk\platform\driver\spi\spi_58x.h)(0x5EA912AC)
+F (..\..\sdk\platform\utilities\otp_cs\otp_cs.c)(0x5EA912AC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork -I .\..\..\sdk\platform\driver\i2c_eeprom -I .\..\..\sdk\platform\driver\i2c -I .\..\..\sdk\platform\driver\spi -I .\..\..\sdk\platform\driver\dma -I .\..\..\sdk\platform\arch -I .\..\..\sdk\platform\arch\compiler -I .\..\..\sdk\platform\arch\ll -I .\..\..\sdk\platform\driver\reg -I .\..\..\sdk\platform\include -I .\include -I .\..\..\sdk\platform\driver\gpio -I .\..\..\sdk\platform\driver\spi_flash -I .\..\..\sdk\platform\core_modules\rwip\api -I .\..\..\sdk\platform\driver\hw_otpc -I .\..\..\sdk\platform\driver\uart -I .\..\..\sdk\platform\driver\syscntl -I .\..\..\sdk\platform\driver\timer -I .\..\..\sdk\platform\utilities\otp_hdr -I .\..\..\sdk\platform\arch\main -I .\..\..\sdk\platform\core_modules\nvds\api -I ..\..\sdk\platform\include\CMSIS\5.6.0\Include --thumb -c --bss_threshold=0 --preinclude da1458x_config_basic.h --feedback=".\unused_jtag_585.txt"-ID:\ProgramData\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="536" -DARMCM0 -D__NON_BLE_EXAMPLE__-o .\out_jtag_585\otp_cs.o --omf_browse .\out_jtag_585\otp_cs.crf --depend .\out_jtag_585\otp_cs.d)
+I (.\include\da1458x_config_basic.h)(0x5EA912AC)
+F (.\include\user_periph_setup.h)(0x5EA912AC)()
+F (.\include\programmer.h)(0x5EA912AC)()
+F (.\..\..\sdk\platform\driver\gpio\gpio.h)(0x5EA912AC)()
+F (.\..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.h)(0x5EA912AC)()
+F (.\..\..\sdk\platform\driver\spi\spi.h)(0x5EA912AC)()
+F (.\..\..\sdk\platform\driver\spi_flash\spi_flash.h)(0x5EA912AC)()
+F (.\include\version.h)(0x5EA912AC)()
+F (..\..\sdk\platform\driver\hw_otpc\hw_otpc.h)(0x5EA912AC)()
+F (.\include\da1458x_config_basic.h)(0x5EA912AC)()

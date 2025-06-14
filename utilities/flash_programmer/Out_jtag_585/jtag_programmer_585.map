@@ -1,0 +1,821 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    startup_da14585_586.o(RESET) refers to startup_da14585_586.o(STACK) for __initial_sp
+    startup_da14585_586.o(RESET) refers to startup_da14585_586.o(.text) for Reset_Handler
+    startup_da14585_586.o(RESET) refers to uart.o(.text) for UART_Handler
+    startup_da14585_586.o(RESET) refers to i2c.o(.text) for I2C_Handler
+    startup_da14585_586.o(RESET) refers to gpio.o(.text) for GPIO0_Handler
+    startup_da14585_586.o(RESET) refers to timer0.o(.text) for SWTIM_Handler
+    startup_da14585_586.o(.text) refers to system_da14585_586.o(.text) for SystemInit
+    startup_da14585_586.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    startup_da14585_586.o(.text) refers to nmi_handler.o(.text) for NMI_HandlerC
+    startup_da14585_586.o(.text) refers to hardfault_handler.o(.text) for HardFault_HandlerC
+    system_da14585_586.o(.text) refers to system_da14585_586.o(.data) for .data
+    peripherals.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    peripherals.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    peripherals.o(.text) refers to peripherals.o(.bss) for .bss
+    crc32.o(.text) refers to crc32.o(.constdata) for .constdata
+    i2c_eeprom.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_init
+    i2c_eeprom.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_release
+    i2c_eeprom.o(.text) refers to i2c.o(.text) for i2c_release
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(retention_mem_area0) for retention_mem_area0
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    i2c_eeprom.o(.text) refers to i2c_eeprom.o(.text) for i2c_wait_until_eeprom_ready
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.constdata) for .constdata
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_initialize
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_configure_env
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_set_write_enable
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_wait_till_ready
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_status_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_write_status_config_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_security_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_send
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_program_buffer
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_page_fill
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_read_security_reg
+    spi_flash.o(.text) refers to spi_flash.o(.text) for spi_flash_is_busy
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_set_bitmode
+    spi_flash.o(.text) refers to spi_58x.o(.text) for spi_receive
+    spi_flash.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    spi_flash.o(.text) refers to spi_flash.o(.bss) for .bss
+    gpio.o(.text) refers to gpio.o(retention_mem_area0) for retention_mem_area0
+    gpio.o(.text) refers to gpio.o(.text) for gpioshift16
+    gpio.o(.text) refers to gpio.o(.text) for gpioshift16
+    gpio.o(.text) refers to gpio.o(retention_mem_area0) for retention_mem_area0
+    programmer.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    programmer.o(.text) refers to timer0.o(.text) for timer0_stop
+    programmer.o(.text) refers to uidiv.o(.text) for __aeabi_uidivmod
+    programmer.o(.text) refers to spi_58x.o(.text) for spi_initialize
+    programmer.o(.text) refers to spi_flash.o(.text) for spi_flash_release_from_power_down
+    programmer.o(.text) refers to arch_system.o(.text) for system_init
+    programmer.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    programmer.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    programmer.o(.text) refers to peripherals.o(.text) for update_spi_pads
+    programmer.o(.text) refers to programmer.o(.constdata) for .constdata
+    programmer.o(.text) refers to programmer.o(.bss) for .bss
+    programmer.o(.text) refers to programmer.o(.data) for .data
+    programmer.o(.text) refers to peripherals.o(.bss) for spi_sel_pins
+    programmer.o(.text) refers to programmer.o(non_init) for non_init
+    programmer.o(.text) refers to uread4.o(.text) for __aeabi_uread4
+    programmer.o(.text) refers to i2c_eeprom.o(.text) for i2c_eeprom_configure
+    programmer.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_manual_read_on
+    programmer.o(.text) refers to gpio.o(.text) for GPIO_ConfigurePin
+    programmer.o(.text) refers to timer0.o(.text) for timer0_stop
+    programmer.o(.text) refers to programmer.o(.bss) for .bss
+    programmer.o(.text) refers to programmer.o(.bss) for .bss
+    programmer.o(.text) refers to programmer.o(.bss) for .bss
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.constdata) for .constdata
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_num_of_rr
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_manual_word_prog
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for manual_prog_verify
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_write_rr
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_manual_read_on
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_manual_word_prog
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for wait_for_auto_done
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for wait_for_auto_done
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for wait_for_auto_done
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_core_test
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_core_test
+    hw_otpc_58x.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_core_test
+    spi_58x.o(.text) refers to gpio.o(.text) for GPIO_SetActive
+    spi_58x.o(.text) refers to spi_58x.o(retention_mem_area0) for retention_mem_area0
+    spi_58x.o(.text) refers to spi_58x.o(.text) for spi_cs_high
+    spi_58x.o(.text) refers to spi_58x.o(retention_mem_area0) for retention_mem_area0
+    spi_58x.o(.text) refers to spi_58x.o(.text) for wait_spi_to_finish
+    spi_58x.o(.text) refers to spi_58x.o(.text) for wait_spi_to_finish
+    spi_58x.o(.text) refers to spi_58x.o(.text) for wait_spi_to_finish
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.text) for __NVIC_ClearPendingIRQ
+    i2c.o(.text) refers to i2c.o(.text) for i2c_unregister_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for tx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_master_transmit_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for i2c_unregister_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for rx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_master_receive_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for rx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_slave_receive_buffer_handler
+    i2c.o(.text) refers to i2c.o(.text) for tx_reply
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for i2c_register_int
+    i2c.o(.text) refers to i2c.o(.bss) for .bss
+    i2c.o(.text) refers to i2c.o(.text) for intr_slave_transmit_buffer_handler
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_enable
+    uart.o(.text) refers to uart.o(.text) for uart_baudrate_setf
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_write_byte
+    uart.o(.text) refers to uart.o(.text) for uart_write_buffer
+    uart.o(.text) refers to uart.o(.text) for __NVIC_DisableIRQ
+    uart.o(.text) refers to uart.o(.text) for __NVIC_SetPriority
+    uart.o(.text) refers to uart.o(.text) for __NVIC_EnableIRQ
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_read_byte
+    uart.o(.text) refers to uart.o(.text) for uart_read_buffer
+    uart.o(.text) refers to uart.o(.text) for __NVIC_DisableIRQ
+    uart.o(.text) refers to uart.o(.text) for __NVIC_SetPriority
+    uart.o(.text) refers to uart.o(.text) for __NVIC_EnableIRQ
+    uart.o(.text) refers to uart.o(retention_mem_area0) for retention_mem_area0
+    uart.o(.text) refers to uart.o(.text) for uart_enable_flow_control
+    timer0.o(.text) refers to timer0.o(retention_mem_area0) for retention_mem_area0
+    timer0.o(.text) refers to timer0.o(.text) for timer0_stop
+    timer0.o(.text) refers to timer0.o(retention_mem_area0) for retention_mem_area0
+    arch_system.o(.text) refers to arch_system.o(retention_mem_area0) for retention_mem_area0
+    arch_system.o(.text) refers to gpio.o(.text) for GPIO_init
+    arch_system.o(.text) refers to hw_otpc_58x.o(.text) for hw_otpc_manual_read_on
+    arch_system.o(.text) refers to peripherals.o(.text) for periph_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000F) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$00000011) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry12b.o(.ARM.Collect$$$$0000000E) for __rt_lib_shutdown_fini
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_da14585_586.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_da14585_586.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to programmer.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to programmer.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup_da14585_586.o(HEAP), (256 bytes).
+    Removing system_da14585_586.o(.rev16_text), (4 bytes).
+    Removing system_da14585_586.o(.revsh_text), (4 bytes).
+    Removing system_da14585_586.o(.text), (16 bytes).
+    Removing system_da14585_586.o(.data), (4 bytes).
+    Removing hardfault_handler.o(.rev16_text), (4 bytes).
+    Removing hardfault_handler.o(.revsh_text), (4 bytes).
+    Removing nmi_handler.o(.rev16_text), (4 bytes).
+    Removing nmi_handler.o(.revsh_text), (4 bytes).
+    Removing peripherals.o(.rev16_text), (4 bytes).
+    Removing peripherals.o(.revsh_text), (4 bytes).
+    Removing peripherals.o(.bss), (4 bytes).
+    Removing crc32.o(.text), (36 bytes).
+    Removing crc32.o(.constdata), (1024 bytes).
+    Removing i2c_eeprom.o(.rev16_text), (4 bytes).
+    Removing i2c_eeprom.o(.revsh_text), (4 bytes).
+    Removing i2c_eeprom.o(.text), (24 bytes).
+    Removing i2c_eeprom.o(.text), (8 bytes).
+    Removing i2c_eeprom.o(.text), (20 bytes).
+    Removing i2c_eeprom.o(.text), (96 bytes).
+    Removing i2c_eeprom.o(.text), (80 bytes).
+    Removing spi_flash.o(.rev16_text), (4 bytes).
+    Removing spi_flash.o(.revsh_text), (4 bytes).
+    Removing spi_flash.o(.text), (32 bytes).
+    Removing spi_flash.o(.text), (24 bytes).
+    Removing spi_flash.o(.text), (10 bytes).
+    Removing spi_flash.o(.text), (10 bytes).
+    Removing spi_flash.o(.text), (46 bytes).
+    Removing spi_flash.o(.text), (26 bytes).
+    Removing spi_flash.o(.text), (40 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (8 bytes).
+    Removing spi_flash.o(.text), (36 bytes).
+    Removing spi_flash.o(.text), (52 bytes).
+    Removing spi_flash.o(.text), (70 bytes).
+    Removing spi_flash.o(.text), (44 bytes).
+    Removing spi_flash.o(.text), (42 bytes).
+    Removing spi_flash.o(.text), (24 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (82 bytes).
+    Removing spi_flash.o(.text), (108 bytes).
+    Removing spi_flash.o(.text), (88 bytes).
+    Removing spi_flash.o(.text), (100 bytes).
+    Removing spi_flash.o(.text), (22 bytes).
+    Removing spi_flash.o(.text), (132 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(.text), (28 bytes).
+    Removing gpio.o(.text), (32 bytes).
+    Removing gpio.o(.text), (248 bytes).
+    Removing gpio.o(.text), (144 bytes).
+    Removing gpio.o(.text), (36 bytes).
+    Removing gpio.o(.text), (24 bytes).
+    Removing gpio.o(.text), (92 bytes).
+    Removing gpio.o(.text), (12 bytes).
+    Removing gpio.o(.text), (16 bytes).
+    Removing gpio.o(.text), (16 bytes).
+    Removing programmer.o(.rev16_text), (4 bytes).
+    Removing programmer.o(.revsh_text), (4 bytes).
+    Removing programmer.o(.text), (40 bytes).
+    Removing programmer.o(.text), (6 bytes).
+    Removing programmer.o(.text), (24 bytes).
+    Removing programmer.o(.text), (20 bytes).
+    Removing programmer.o(.text), (8 bytes).
+    Removing programmer.o(.text), (8 bytes).
+    Removing programmer.o(.text), (4 bytes).
+    Removing programmer.o(.text), (12 bytes).
+    Removing programmer.o(.text), (12 bytes).
+    Removing programmer.o(.text), (12 bytes).
+    Removing programmer.o(.bss), (2 bytes).
+    Removing hw_otpc_58x.o(.rev16_text), (4 bytes).
+    Removing hw_otpc_58x.o(.revsh_text), (4 bytes).
+    Removing hw_otpc_58x.o(.text), (40 bytes).
+    Removing hw_otpc_58x.o(.text), (20 bytes).
+    Removing hw_otpc_58x.o(.text), (80 bytes).
+    Removing hw_otpc_58x.o(.text), (96 bytes).
+    Removing hw_otpc_58x.o(.text), (164 bytes).
+    Removing hw_otpc_58x.o(.text), (12 bytes).
+    Removing hw_otpc_58x.o(.text), (168 bytes).
+    Removing hw_otpc_58x.o(.text), (64 bytes).
+    Removing hw_otpc_58x.o(.text), (52 bytes).
+    Removing hw_otpc_58x.o(.text), (104 bytes).
+    Removing hw_otpc_58x.o(.text), (32 bytes).
+    Removing hw_otpc_58x.o(.text), (16 bytes).
+    Removing hw_otpc_58x.o(.text), (10 bytes).
+    Removing hw_otpc_58x.o(.text), (10 bytes).
+    Removing hw_otpc_58x.o(.text), (10 bytes).
+    Removing hw_otpc_58x.o(.text), (116 bytes).
+    Removing hw_otpc_58x.o(.text), (36 bytes).
+    Removing hw_otpc_58x.o(.constdata), (20 bytes).
+    Removing spi_58x.o(.rev16_text), (4 bytes).
+    Removing spi_58x.o(.revsh_text), (4 bytes).
+    Removing spi_58x.o(.text), (60 bytes).
+    Removing spi_58x.o(.text), (56 bytes).
+    Removing spi_58x.o(.text), (24 bytes).
+    Removing spi_58x.o(.text), (36 bytes).
+    Removing spi_58x.o(.text), (40 bytes).
+    Removing spi_58x.o(.text), (96 bytes).
+    Removing spi_58x.o(.text), (104 bytes).
+    Removing spi_58x.o(.text), (152 bytes).
+    Removing spi_58x.o(.text), (28 bytes).
+    Removing i2c.o(.rev16_text), (4 bytes).
+    Removing i2c.o(.revsh_text), (4 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (100 bytes).
+    Removing i2c.o(.text), (104 bytes).
+    Removing i2c.o(.text), (20 bytes).
+    Removing i2c.o(.text), (18 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (132 bytes).
+    Removing i2c.o(.text), (60 bytes).
+    Removing i2c.o(.text), (36 bytes).
+    Removing i2c.o(.text), (112 bytes).
+    Removing i2c.o(.text), (48 bytes).
+    Removing i2c.o(.text), (40 bytes).
+    Removing i2c.o(.text), (92 bytes).
+    Removing i2c.o(.text), (92 bytes).
+    Removing i2c.o(.text), (40 bytes).
+    Removing i2c.o(.text), (144 bytes).
+    Removing i2c.o(.text), (48 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(.text), (68 bytes).
+    Removing uart.o(.text), (52 bytes).
+    Removing uart.o(.text), (56 bytes).
+    Removing uart.o(.text), (50 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing uart.o(.text), (172 bytes).
+    Removing uart.o(.text), (14 bytes).
+    Removing uart.o(.text), (30 bytes).
+    Removing uart.o(.text), (120 bytes).
+    Removing uart.o(.text), (12 bytes).
+    Removing uart.o(.text), (14 bytes).
+    Removing uart.o(.text), (28 bytes).
+    Removing uart.o(.text), (120 bytes).
+    Removing uart.o(.text), (22 bytes).
+    Removing uart.o(.text), (94 bytes).
+    Removing uart.o(.text), (24 bytes).
+    Removing uart.o(.text), (32 bytes).
+    Removing syscntl.o(.rev16_text), (4 bytes).
+    Removing syscntl.o(.revsh_text), (4 bytes).
+    Removing syscntl.o(.text), (22 bytes).
+    Removing syscntl.o(.text), (22 bytes).
+    Removing syscntl.o(.text), (24 bytes).
+    Removing timer0.o(.rev16_text), (4 bytes).
+    Removing timer0.o(.revsh_text), (4 bytes).
+    Removing timer0.o(.text), (8 bytes).
+    Removing timer0.o(.text), (16 bytes).
+    Removing timer0.o(.text), (24 bytes).
+    Removing timer0.o(.text), (12 bytes).
+    Removing arch_system.o(.rev16_text), (4 bytes).
+    Removing arch_system.o(.revsh_text), (4 bytes).
+    Removing arch_system.o(.text), (2 bytes).
+    Removing arch_system.o(.text), (92 bytes).
+    Removing arch_system.o(retention_mem_area0), (2 bytes).
+
+157 unused section(s) (total 7556 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/unhosted.c              0x00000000   Number         0  uread4.o ABSOLUTE
+    ..\..\sdk\platform\arch\boot\ARM\startup_DA14585_586.s 0x00000000   Number         0  startup_da14585_586.o ABSOLUTE
+    ..\..\sdk\platform\arch\boot\system_DA14585_586.c 0x00000000   Number         0  system_da14585_586.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\arch_system.c 0x00000000   Number         0  arch_system.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\hardfault_handler.c 0x00000000   Number         0  hardfault_handler.o ABSOLUTE
+    ..\..\sdk\platform\arch\main\nmi_handler.c 0x00000000   Number         0  nmi_handler.o ABSOLUTE
+    ..\..\sdk\platform\driver\dma\dma.c      0x00000000   Number         0  dma.o ABSOLUTE
+    ..\..\sdk\platform\driver\gpio\gpio.c    0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\..\sdk\platform\driver\hw_otpc\hw_otpc_58x.c 0x00000000   Number         0  hw_otpc_58x.o ABSOLUTE
+    ..\..\sdk\platform\driver\i2c\i2c.c      0x00000000   Number         0  i2c.o ABSOLUTE
+    ..\..\sdk\platform\driver\i2c_eeprom\i2c_eeprom.c 0x00000000   Number         0  i2c_eeprom.o ABSOLUTE
+    ..\..\sdk\platform\driver\spi\spi_58x.c  0x00000000   Number         0  spi_58x.o ABSOLUTE
+    ..\..\sdk\platform\driver\spi_flash\spi_flash.c 0x00000000   Number         0  spi_flash.o ABSOLUTE
+    ..\..\sdk\platform\driver\syscntl\syscntl.c 0x00000000   Number         0  syscntl.o ABSOLUTE
+    ..\..\sdk\platform\driver\timer\timer0.c 0x00000000   Number         0  timer0.o ABSOLUTE
+    ..\..\sdk\platform\driver\uart\uart.c    0x00000000   Number         0  uart.o ABSOLUTE
+    ..\..\sdk\platform\utilities\otp_cs\otp_cs.c 0x00000000   Number         0  otp_cs.o ABSOLUTE
+    ..\..\third_party\crc32\crc32.c          0x00000000   Number         0  crc32.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\boot\\system_DA14585_586.c 0x00000000   Number         0  system_da14585_586.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\arch_system.c 0x00000000   Number         0  arch_system.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\hardfault_handler.c 0x00000000   Number         0  hardfault_handler.o ABSOLUTE
+    ..\\..\\sdk\\platform\\arch\\main\\nmi_handler.c 0x00000000   Number         0  nmi_handler.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\gpio\\gpio.c 0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\hw_otpc\\hw_otpc_58x.c 0x00000000   Number         0  hw_otpc_58x.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\i2c\\i2c.c 0x00000000   Number         0  i2c.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\i2c_eeprom\\i2c_eeprom.c 0x00000000   Number         0  i2c_eeprom.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\spi\\spi_58x.c 0x00000000   Number         0  spi_58x.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\spi_flash\\spi_flash.c 0x00000000   Number         0  spi_flash.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\syscntl\\syscntl.c 0x00000000   Number         0  syscntl.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\timer\\timer0.c 0x00000000   Number         0  timer0.o ABSOLUTE
+    ..\\..\\sdk\\platform\\driver\\uart\\uart.c 0x00000000   Number         0  uart.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    src\\peripherals.c                       0x00000000   Number         0  peripherals.o ABSOLUTE
+    src\\programmer.c                        0x00000000   Number         0  programmer.o ABSOLUTE
+    src\peripherals.c                        0x00000000   Number         0  peripherals.o ABSOLUTE
+    src\programmer.c                         0x00000000   Number         0  programmer.o ABSOLUTE
+    RESET                                    0x07fc0000   Section      160  startup_da14585_586.o(RESET)
+    .ARM.Collect$$$$00000000                 0x07fc00a0   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x07fc00a0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x07fc00a4   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x07fc00a8   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x07fc00a8   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x07fc00a8   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000E                 0x07fc00b0   Section        4  entry12b.o(.ARM.Collect$$$$0000000E)
+    .ARM.Collect$$$$0000000F                 0x07fc00b4   Section        0  entry10a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00000011                 0x07fc00b4   Section        0  entry11a.o(.ARM.Collect$$$$00000011)
+    .ARM.Collect$$$$00002712                 0x07fc00b4   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x07fc00b4   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x07fc00b8   Section       80  startup_da14585_586.o(.text)
+    NMI_Handler                              0x07fc00c1   Thumb Code    24  startup_da14585_586.o(.text)
+    HardFault_Handler                        0x07fc00d9   Thumb Code    24  startup_da14585_586.o(.text)
+    .text                                    0x07fc0108   Section        0  system_da14585_586.o(.text)
+    __NVIC_DisableIRQ                        0x07fc012f   Thumb Code    26  system_da14585_586.o(.text)
+    .text                                    0x07fc0150   Section        0  hardfault_handler.o(.text)
+    .text                                    0x07fc0154   Section        0  nmi_handler.o(.text)
+    .text                                    0x07fc018c   Section        0  peripherals.o(.text)
+    .text                                    0x07fc02a4   Section        0  i2c_eeprom.o(.text)
+    i2c_eeprom_send_address                  0x07fc0303   Thumb Code    86  i2c_eeprom.o(.text)
+    read_data_single                         0x07fc0359   Thumb Code   128  i2c_eeprom.o(.text)
+    .text                                    0x07fc0510   Section        0  spi_flash.o(.text)
+    spi_flash_write_enable                   0x07fc062f   Thumb Code    48  spi_flash.o(.text)
+    .text                                    0x07fc08b4   Section        0  gpio.o(.text)
+    gpioshift16                              0x07fc09cd   Thumb Code    32  gpio.o(.text)
+    .text                                    0x07fc0a00   Section        0  programmer.o(.text)
+    hw_otpc_init                             0x07fc0a01   Thumb Code    60  programmer.o(.text)
+    spi_flash_peripheral_init                0x07fc0b91   Thumb Code   122  programmer.o(.text)
+    .text                                    0x07fc118c   Section        0  hw_otpc_58x.o(.text)
+    wait_for_auto_done                       0x07fc123d   Thumb Code    10  hw_otpc_58x.o(.text)
+    .text                                    0x07fc1250   Section        0  spi_58x.o(.text)
+    .text                                    0x07fc1364   Section        0  i2c.o(.text)
+    __NVIC_ClearPendingIRQ                   0x07fc14af   Thumb Code    18  i2c.o(.text)
+    .text                                    0x07fc14d4   Section        0  uart.o(.text)
+    uart_rx_isr                              0x07fc14d5   Thumb Code    72  uart.o(.text)
+    uart_intr_hndl                           0x07fc151d   Thumb Code   156  uart.o(.text)
+    uart_tx_isr                              0x07fc15c1   Thumb Code   100  uart.o(.text)
+    .text                                    0x07fc1630   Section        0  timer0.o(.text)
+    .text                                    0x07fc1688   Section        0  arch_system.o(.text)
+    .text                                    0x07fc1738   Section        0  uidiv.o(.text)
+    .text                                    0x07fc1764   Section        0  memcpya.o(.text)
+    .text                                    0x07fc1788   Section        0  memseta.o(.text)
+    .text                                    0x07fc17ac   Section        0  uread4.o(.text)
+    .text                                    0x07fc17c0   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x07fc17e4   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x07fc17f2   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x07fc17f4   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .constdata                               0x07fc1804   Section       96  spi_flash.o(.constdata)
+    .constdata                               0x07fc1864   Section       16  programmer.o(.constdata)
+    .data                                    0x07fc1884   Section       40  programmer.o(.data)
+    spi_cfg_gl                               0x07fc1884   Data           4  programmer.o(.data)
+    i2c_eeprom_cfg                           0x07fc1888   Data           8  programmer.o(.data)
+    i2c_cfg                                  0x07fc1890   Data          16  programmer.o(.data)
+    spi_flash_cfg                            0x07fc18a0   Data          12  programmer.o(.data)
+    non_init                                 0x07fc18b0   Section        1  programmer.o(non_init)
+    .bss                                     0x07fc18b4   Section       12  peripherals.o(.bss)
+    .bss                                     0x07fc18c0   Section       12  spi_flash.o(.bss)
+    spi_flash_cfg_env                        0x07fc18c0   Data          12  spi_flash.o(.bss)
+    .bss                                     0x07fc18cc   Section       16  programmer.o(.bss)
+    wdog_enabled                             0x07fc18cc   Data           1  programmer.o(.bss)
+    last_status                              0x07fc18d4   Data           4  programmer.o(.bss)
+    spi_flash_cfg_p                          0x07fc18d8   Data           4  programmer.o(.bss)
+    .bss                                     0x07fc18dc   Section       48  i2c.o(.bss)
+    i2c_env                                  0x07fc18dc   Data          48  i2c.o(.bss)
+    retention_mem_area0                      0x07fc190c   Section       24  i2c_eeprom.o(retention_mem_area0)
+    i2c_eeprom_env                           0x07fc190c   Data          24  i2c_eeprom.o(retention_mem_area0)
+    retention_mem_area0                      0x07fc1924   Section       20  gpio.o(retention_mem_area0)
+    retention_mem_area0                      0x07fc1938   Section        2  spi_58x.o(retention_mem_area0)
+    spi_env                                  0x07fc1938   Data           2  spi_58x.o(retention_mem_area0)
+    retention_mem_area0                      0x07fc193c   Section       64  uart.o(retention_mem_area0)
+    uartn_env                                0x07fc193c   Data          64  uart.o(retention_mem_area0)
+    retention_mem_area0                      0x07fc197c   Section        4  timer0.o(retention_mem_area0)
+    STACK                                    0x07fc1980   Section     1536  startup_da14585_586.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  programmer.o ABSOLUTE
+    __arm_fini_                               - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    reset_indication                          - Undefined Weak Reference
+    __Vectors_Size                           0x000000a0   Number         0  startup_da14585_586.o ABSOLUTE
+    __Vectors                                0x07fc0000   Data           4  startup_da14585_586.o(RESET)
+    __Vectors_End                            0x07fc00a0   Data           0  startup_da14585_586.o(RESET)
+    __main                                   0x07fc00a1   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x07fc00a1   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x07fc00a5   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x07fc00a9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x07fc00a9   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x07fc00a9   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x07fc00a9   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_lib_shutdown_fini                   0x07fc00b1   Thumb Code     0  entry12b.o(.ARM.Collect$$$$0000000E)
+    __rt_final_cpp                           0x07fc00b5   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000F)
+    __rt_final_exit                          0x07fc00b5   Thumb Code     0  entry11a.o(.ARM.Collect$$$$00000011)
+    Reset_Handler                            0x07fc00b9   Thumb Code     8  startup_da14585_586.o(.text)
+    SVC_Handler                              0x07fc00f1   Thumb Code     2  startup_da14585_586.o(.text)
+    PendSV_Handler                           0x07fc00f3   Thumb Code     2  startup_da14585_586.o(.text)
+    SysTick_Handler                          0x07fc00f5   Thumb Code     2  startup_da14585_586.o(.text)
+    ADC_Handler                              0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    BLE_RF_DIAG_Handler                      0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    BLE_WAKEUP_LP_Handler                    0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    DMA_Handler                              0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    KEYBRD_Handler                           0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    PCM_Handler                              0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    RESERVED21_Handler                       0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    RESERVED22_Handler                       0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    RESERVED23_Handler                       0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    RFCAL_Handler                            0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    SPI_Handler                              0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    SRCIN_Handler                            0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    SRCOUT_Handler                           0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    WKUP_QUADEC_Handler                      0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    rwble_isr                                0x07fc00f7   Thumb Code     0  startup_da14585_586.o(.text)
+    SystemInit                               0x07fc0109   Thumb Code    38  system_da14585_586.o(.text)
+    HardFault_HandlerC                       0x07fc0151   Thumb Code     2  hardfault_handler.o(.text)
+    NMI_HandlerC                             0x07fc0155   Thumb Code    50  nmi_handler.o(.text)
+    init_i2c_pads                            0x07fc018d   Thumb Code    28  peripherals.o(.text)
+    init_spi_pads                            0x07fc01a9   Thumb Code    42  peripherals.o(.text)
+    periph_init                              0x07fc01d3   Thumb Code    40  peripherals.o(.text)
+    set_pad_spi                              0x07fc01fb   Thumb Code    72  peripherals.o(.text)
+    update_spi_pads                          0x07fc0243   Thumb Code    38  peripherals.o(.text)
+    set_pad_eeprom                           0x07fc0269   Thumb Code    36  peripherals.o(.text)
+    update_eeprom_pads                       0x07fc028d   Thumb Code    20  peripherals.o(.text)
+    i2c_eeprom_configure                     0x07fc02a5   Thumb Code    22  i2c_eeprom.o(.text)
+    i2c_eeprom_initialize                    0x07fc02bb   Thumb Code    10  i2c_eeprom.o(.text)
+    i2c_wait_until_eeprom_ready              0x07fc02c5   Thumb Code    62  i2c_eeprom.o(.text)
+    i2c_eeprom_read_data                     0x07fc03d9   Thumb Code    78  i2c_eeprom.o(.text)
+    i2c_eeprom_write_page                    0x07fc0427   Thumb Code   142  i2c_eeprom.o(.text)
+    i2c_eeprom_write_data                    0x07fc04b5   Thumb Code    80  i2c_eeprom.o(.text)
+    spi_flash_read_status_reg                0x07fc0511   Thumb Code    20  spi_flash.o(.text)
+    spi_flash_is_busy                        0x07fc0525   Thumb Code    16  spi_flash.o(.text)
+    spi_flash_wait_till_ready                0x07fc0535   Thumb Code    26  spi_flash.o(.text)
+    spi_flash_release_from_power_down        0x07fc054f   Thumb Code    26  spi_flash.o(.text)
+    spi_flash_configure_env                  0x07fc0569   Thumb Code     8  spi_flash.o(.text)
+    spi_flash_read_jedec_id                  0x07fc0571   Thumb Code    76  spi_flash.o(.text)
+    spi_flash_auto_detect                    0x07fc05bd   Thumb Code    94  spi_flash.o(.text)
+    spi_flash_enable_with_autodetect         0x07fc061b   Thumb Code    20  spi_flash.o(.text)
+    spi_flash_write_status_reg               0x07fc065f   Thumb Code    34  spi_flash.o(.text)
+    spi_flash_configure_memory_protection    0x07fc0681   Thumb Code    44  spi_flash.o(.text)
+    spi_flash_block_erase                    0x07fc06ad   Thumb Code    44  spi_flash.o(.text)
+    spi_flash_chip_erase                     0x07fc06d9   Thumb Code    36  spi_flash.o(.text)
+    spi_flash_page_program                   0x07fc06fd   Thumb Code    92  spi_flash.o(.text)
+    spi_flash_write_data                     0x07fc0759   Thumb Code   102  spi_flash.o(.text)
+    spi_flash_read_data                      0x07fc07bf   Thumb Code    94  spi_flash.o(.text)
+    spi_flash_is_page_empty                  0x07fc081d   Thumb Code    68  spi_flash.o(.text)
+    spi_flash_is_sector_empty                0x07fc0861   Thumb Code    32  spi_flash.o(.text)
+    spi_flash_is_empty                       0x07fc0881   Thumb Code    36  spi_flash.o(.text)
+    GPIO_init                                0x07fc08b5   Thumb Code     2  gpio.o(.text)
+    GPIO_SetPinFunction                      0x07fc08b7   Thumb Code    24  gpio.o(.text)
+    GPIO_SetInactive                         0x07fc08cf   Thumb Code    20  gpio.o(.text)
+    GPIO_SetActive                           0x07fc08e3   Thumb Code    20  gpio.o(.text)
+    GPIO_ConfigurePin                        0x07fc08f7   Thumb Code    38  gpio.o(.text)
+    GPIO_ConfigurePinPower                   0x07fc091d   Thumb Code    44  gpio.o(.text)
+    GPIO_is_valid                            0x07fc0949   Thumb Code    28  gpio.o(.text)
+    GPIO_ResetIRQ                            0x07fc0965   Thumb Code    32  gpio.o(.text)
+    GPIOn_Handler                            0x07fc0985   Thumb Code    52  gpio.o(.text)
+    GPIO0_Handler                            0x07fc09b9   Thumb Code     4  gpio.o(.text)
+    GPIO1_Handler                            0x07fc09bd   Thumb Code     4  gpio.o(.text)
+    GPIO2_Handler                            0x07fc09c1   Thumb Code     4  gpio.o(.text)
+    GPIO3_Handler                            0x07fc09c5   Thumb Code     4  gpio.o(.text)
+    GPIO4_Handler                            0x07fc09c9   Thumb Code     4  gpio.o(.text)
+    gpio_wd_timer0_start                     0x07fc0a3d   Thumb Code   118  programmer.o(.text)
+    gpio_wd_cmd                              0x07fc0ab3   Thumb Code    60  programmer.o(.text)
+    response_action                          0x07fc0aef   Thumb Code    20  programmer.o(.text)
+    response_cfg_action_result               0x07fc0b03   Thumb Code    26  programmer.o(.text)
+    response_erase_action_result             0x07fc0b1d   Thumb Code    26  programmer.o(.text)
+    response_read_action_result              0x07fc0b37   Thumb Code    12  programmer.o(.text)
+    response_action_error                    0x07fc0b43   Thumb Code    26  programmer.o(.text)
+    response_write_action_result             0x07fc0b5d   Thumb Code    26  programmer.o(.text)
+    response_id_action_result                0x07fc0b77   Thumb Code    26  programmer.o(.text)
+    main                                     0x07fc0c0b   Thumb Code  1396  programmer.o(.text)
+    hw_otpc_disable                          0x07fc118d   Thumb Code    72  hw_otpc_58x.o(.text)
+    hw_otpc_manual_read_on                   0x07fc11d5   Thumb Code    18  hw_otpc_58x.o(.text)
+    hw_otpc_fifo_prog                        0x07fc11e7   Thumb Code    86  hw_otpc_58x.o(.text)
+    spi_enable                               0x07fc1251   Thumb Code    36  spi_58x.o(.text)
+    spi_cs_high                              0x07fc1275   Thumb Code    14  spi_58x.o(.text)
+    spi_set_bitmode                          0x07fc1283   Thumb Code    34  spi_58x.o(.text)
+    spi_initialize                           0x07fc12a5   Thumb Code    84  spi_58x.o(.text)
+    spi_cs_low                               0x07fc12f9   Thumb Code    14  spi_58x.o(.text)
+    spi_access                               0x07fc1307   Thumb Code    60  spi_58x.o(.text)
+    spi_transaction                          0x07fc1343   Thumb Code    24  spi_58x.o(.text)
+    i2c_setup_slave                          0x07fc1365   Thumb Code    44  i2c.o(.text)
+    i2c_setup_master                         0x07fc1391   Thumb Code    68  i2c.o(.text)
+    i2c_init                                 0x07fc13d5   Thumb Code   190  i2c.o(.text)
+    I2C_Handler                              0x07fc1493   Thumb Code    28  i2c.o(.text)
+    UART_Handler                             0x07fc15b9   Thumb Code     4  uart.o(.text)
+    UART2_Handler                            0x07fc15bd   Thumb Code     4  uart.o(.text)
+    timer0_init                              0x07fc1631   Thumb Code    30  timer0.o(.text)
+    timer0_start                             0x07fc164f   Thumb Code    12  timer0.o(.text)
+    timer0_stop                              0x07fc165b   Thumb Code    12  timer0.o(.text)
+    timer0_set                               0x07fc1667   Thumb Code    10  timer0.o(.text)
+    SWTIM_Handler                            0x07fc1671   Thumb Code    12  timer0.o(.text)
+    system_init                              0x07fc1689   Thumb Code   158  arch_system.o(.text)
+    __aeabi_uidiv                            0x07fc1739   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x07fc1739   Thumb Code    44  uidiv.o(.text)
+    __aeabi_memcpy                           0x07fc1765   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x07fc1765   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x07fc1765   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x07fc1789   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x07fc1789   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x07fc1789   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x07fc1797   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x07fc1797   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x07fc1797   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x07fc179b   Thumb Code    18  memseta.o(.text)
+    __aeabi_uread4                           0x07fc17ad   Thumb Code    20  uread4.o(.text)
+    __rt_uread4                              0x07fc17ad   Thumb Code     0  uread4.o(.text)
+    _uread4                                  0x07fc17ad   Thumb Code     0  uread4.o(.text)
+    __scatterload                            0x07fc17c1   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x07fc17c1   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x07fc17e5   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x07fc17f3   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x07fc17f5   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x07fc1874   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x07fc1884   Number         0  anon$$obj.o(Region$$Table)
+    port_sel                                 0x07fc18b0   Data           1  programmer.o(non_init)
+    i2c_sel_pins                             0x07fc18b4   Data           4  peripherals.o(.bss)
+    spi_sel_pins                             0x07fc18b8   Data           8  peripherals.o(.bss)
+    WD_port                                  0x07fc18cd   Data           1  programmer.o(.bss)
+    WD_pin                                   0x07fc18ce   Data           1  programmer.o(.bss)
+    WD_volt_rail                             0x07fc18cf   Data           1  programmer.o(.bss)
+    buffer                                   0x07fc18d0   Data           4  programmer.o(.bss)
+    GPIOHandlerFunction                      0x07fc1924   Data          20  gpio.o(retention_mem_area0)
+    TIMER0_callback                          0x07fc197c   Data           4  timer0.o(retention_mem_area0)
+    __initial_sp                             0x07fc1f80   Data           0  startup_da14585_586.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x07fc00a1
+
+  Load Region LR_1 (Base: 0x07fc0000, Size: 0x000018ac, Max: 0x00003c00, ABSOLUTE)
+
+    Execution Region ER_1 (Exec base: 0x07fc0000, Load base: 0x07fc0000, Size: 0x000018ac, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fc0000   0x07fc0000   0x000000a0   Data   RO            3    RESET               startup_da14585_586.o
+    0x07fc00a0   0x07fc00a0   0x00000000   Code   RO         1302  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x07fc00a0   0x07fc00a0   0x00000004   Code   RO         1313    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x07fc00a4   0x07fc00a4   0x00000004   Code   RO         1316    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x07fc00a8   0x07fc00a8   0x00000000   Code   RO         1318    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x07fc00a8   0x07fc00a8   0x00000000   Code   RO         1320    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x07fc00a8   0x07fc00a8   0x00000008   Code   RO         1321    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x07fc00b0   0x07fc00b0   0x00000004   Code   RO         1328    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
+    0x07fc00b4   0x07fc00b4   0x00000000   Code   RO         1323    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
+    0x07fc00b4   0x07fc00b4   0x00000000   Code   RO         1325    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
+    0x07fc00b4   0x07fc00b4   0x00000004   Code   RO         1314    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x07fc00b8   0x07fc00b8   0x00000050   Code   RO            4    .text               startup_da14585_586.o
+    0x07fc0108   0x07fc0108   0x00000048   Code   RO           13    .text               system_da14585_586.o
+    0x07fc0150   0x07fc0150   0x00000002   Code   RO           69    .text               hardfault_handler.o
+    0x07fc0152   0x07fc0152   0x00000002   PAD
+    0x07fc0154   0x07fc0154   0x00000038   Code   RO          145    .text               nmi_handler.o
+    0x07fc018c   0x07fc018c   0x00000118   Code   RO          171    .text               peripherals.o
+    0x07fc02a4   0x07fc02a4   0x0000026c   Code   RO          233    .text               i2c_eeprom.o
+    0x07fc0510   0x07fc0510   0x000003a4   Code   RO          297    .text               spi_flash.o
+    0x07fc08b4   0x07fc08b4   0x0000014c   Code   RO          463    .text               gpio.o
+    0x07fc0a00   0x07fc0a00   0x0000078c   Code   RO          559    .text               programmer.o
+    0x07fc118c   0x07fc118c   0x000000c4   Code   RO          684    .text               hw_otpc_58x.o
+    0x07fc1250   0x07fc1250   0x00000114   Code   RO          819    .text               spi_58x.o
+    0x07fc1364   0x07fc1364   0x00000170   Code   RO          901    .text               i2c.o
+    0x07fc14d4   0x07fc14d4   0x0000015c   Code   RO         1022    .text               uart.o
+    0x07fc1630   0x07fc1630   0x00000058   Code   RO         1191    .text               timer0.o
+    0x07fc1688   0x07fc1688   0x000000b0   Code   RO         1247    .text               arch_system.o
+    0x07fc1738   0x07fc1738   0x0000002c   Code   RO         1303    .text               mc_p.l(uidiv.o)
+    0x07fc1764   0x07fc1764   0x00000024   Code   RO         1305    .text               mc_p.l(memcpya.o)
+    0x07fc1788   0x07fc1788   0x00000024   Code   RO         1307    .text               mc_p.l(memseta.o)
+    0x07fc17ac   0x07fc17ac   0x00000014   Code   RO         1311    .text               mc_p.l(uread4.o)
+    0x07fc17c0   0x07fc17c0   0x00000024   Code   RO         1329    .text               mc_p.l(init.o)
+    0x07fc17e4   0x07fc17e4   0x0000000e   Code   RO         1333    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x07fc17f2   0x07fc17f2   0x00000002   Code   RO         1334    i.__scatterload_null  mc_p.l(handlers.o)
+    0x07fc17f4   0x07fc17f4   0x0000000e   Code   RO         1335    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x07fc1802   0x07fc1802   0x00000002   PAD
+    0x07fc1804   0x07fc1804   0x00000060   Data   RO          321    .constdata          spi_flash.o
+    0x07fc1864   0x07fc1864   0x00000010   Data   RO          572    .constdata          programmer.o
+    0x07fc1874   0x07fc1874   0x00000010   Data   RO         1331    Region$$Table       anon$$obj.o
+    0x07fc1884   0x07fc1884   0x00000028   Data   RW          573    .data               programmer.o
+
+
+    Execution Region ER_2 (Exec base: 0x07fc18b0, Load base: 0x07fc18ac, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE, UNINIT)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fc18b0        -       0x00000001   Zero   RW          574    non_init            programmer.o
+
+
+    Execution Region ER_3 (Exec base: 0x07fc18b4, Load base: 0x07fc18ac, Size: 0x000006cc, Max: 0x0000634c, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x07fc18b4        -       0x0000000c   Zero   RW          173    .bss                peripherals.o
+    0x07fc18c0        -       0x0000000c   Zero   RW          320    .bss                spi_flash.o
+    0x07fc18cc        -       0x00000010   Zero   RW          570    .bss                programmer.o
+    0x07fc18dc        -       0x00000030   Zero   RW          919    .bss                i2c.o
+    0x07fc190c        -       0x00000018   Zero   RW          239    retention_mem_area0  i2c_eeprom.o
+    0x07fc1924        -       0x00000014   Zero   RW          474    retention_mem_area0  gpio.o
+    0x07fc1938        -       0x00000002   Zero   RW          829    retention_mem_area0  spi_58x.o
+    0x07fc193a   0x07fc18ac   0x00000002   PAD
+    0x07fc193c        -       0x00000040   Zero   RW         1041    retention_mem_area0  uart.o
+    0x07fc197c        -       0x00000004   Zero   RW         1196    retention_mem_area0  timer0.o
+    0x07fc1980        -       0x00000600   Zero   RW            1    STACK               startup_da14585_586.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       176         18          0          0          0       3070   arch_system.o
+       332         20          0          0         20      15097   gpio.o
+         2          0          0          0          0      11265   hardfault_handler.o
+       196         10          0          0          0       4617   hw_otpc_58x.o
+       368         20          0          0         48       9942   i2c.o
+       620         12          0          0         24      15786   i2c_eeprom.o
+        56          6          0          0          0       8495   nmi_handler.o
+       280          4          0          0         12       8794   peripherals.o
+      1932         82         16         40         17      20670   programmer.o
+       276         10          0          0          2       4296   spi_58x.o
+       932         16         96          0         12      15677   spi_flash.o
+        80         16        160          0       1536        740   startup_da14585_586.o
+        72          8          0          0          0     145429   system_da14585_586.o
+        88         12          0          0          4      10948   timer0.o
+       348         12          0          0         64      11778   uart.o
+
+    ----------------------------------------------------------------------
+      5760        246        288         40       1744     286604   Object Totals
+         0          0         16          0          0          0   (incl. Generated)
+         2          0          0          0          5          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         4          0          0          0          0          0   entry12b.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        36          0          0          0          0         60   memcpya.o
+        36          0          0          0          0        100   memseta.o
+        44          0          0          0          0         72   uidiv.o
+        20          0          0          0          0         60   uread4.o
+
+    ----------------------------------------------------------------------
+       228         16          0          0          0        360   Library Totals
+         2          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       226         16          0          0          0        360   mc_p.l
+
+    ----------------------------------------------------------------------
+       228         16          0          0          0        360   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5988        262        288         40       1744     285972   Grand Totals
+      5988        262        288         40       1744     285972   ELF Image Totals
+      5988        262        288         40          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6276 (   6.13kB)
+    Total RW  Size (RW Data + ZI Data)              1784 (   1.74kB)
+    Total ROM Size (Code + RO Data + RW Data)       6316 (   6.17kB)
+
+==============================================================================
+

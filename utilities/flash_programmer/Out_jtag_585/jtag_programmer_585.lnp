@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+".\out_jtag_585\startup_da14585_586.o"
+".\out_jtag_585\system_da14585_586.o"
+".\out_jtag_585\hardfault_handler.o"
+".\out_jtag_585\nmi_handler.o"
+".\out_jtag_585\peripherals.o"
+".\out_jtag_585\crc32.o"
+".\out_jtag_585\i2c_eeprom.o"
+".\out_jtag_585\spi_flash.o"
+".\out_jtag_585\gpio.o"
+".\out_jtag_585\programmer.o"
+".\out_jtag_585\hw_otpc_58x.o"
+".\out_jtag_585\dma.o"
+".\out_jtag_585\spi_58x.o"
+".\out_jtag_585\i2c.o"
+".\out_jtag_585\uart.o"
+".\out_jtag_585\syscntl.o"
+".\out_jtag_585\timer0.o"
+".\out_jtag_585\arch_system.o"
+".\out_jtag_585\otp_cs.o"
+--library_type=microlib --strict --scatter ".\startup\programmer_jtag_585.sct"
+--datacompressor=off --feedback=".\unused_jtag_585.txt" --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Out_jtag_585\jtag_programmer_585.map" -o .\Out_jtag_585\jtag_programmer_585.axf

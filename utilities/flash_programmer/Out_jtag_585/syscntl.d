@@ -1,0 +1,11 @@
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\driver\syscntl\syscntl.c
+.\out_jtag_585\syscntl.o: .\include\da1458x_config_basic.h
+.\out_jtag_585\syscntl.o: .\..\..\sdk\platform\include\datasheet.h
+.\out_jtag_585\syscntl.o: .\..\..\sdk\platform\include\da14585_586.h
+.\out_jtag_585\syscntl.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\include\CMSIS\5.6.0\Include\core_cm0.h
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_version.h
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_compiler.h
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\include\CMSIS\5.6.0\Include\cmsis_armcc.h
+.\out_jtag_585\syscntl.o: .\..\..\sdk\platform\include\system_DA14585_586.h
+.\out_jtag_585\syscntl.o: ..\..\sdk\platform\driver\syscntl\syscntl.h
